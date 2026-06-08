@@ -1,0 +1,94 @@
+{
+  "max_open_trades": 3,
+  "stake_currency": "USDT",
+  "dry_run": true,
+  "dry_run_wallet": 100,
+  "margin_mode": "cross",
+  "exchange": {
+    "name": "binance",
+    "sandbox": false,
+    "key": "",
+    "secret": "",
+    "pair_whitelist": [
+      "BTC/USDT",
+      "ETH/USDT",
+      "ADA/USDT"
+    ],
+    "pair_blacklist": [
+      "BNB/USDT"
+    ]
+  },
+  "telegram": {
+    "enabled": false,
+    "token": "",
+    "chat_id": ""
+  },
+  "edge": {
+    "enabled": false
+  },
+  "datadir": "user_data",
+  "db_url": "sqlite:///user_data/trades.db",
+  "user_data_dir": "user_data",
+  "initial_state": "running",
+  "fiat_display_currency": "USD",
+  "dry_run_wallet": 100,
+  "cancel_open_orders_on_exit": false,
+  "trading_mode": "spot",
+  "margin_mode": "",
+  "unfilledtimeout": {
+    "entry": 10,
+    "exit": 10,
+    "unit": "minutes"
+  },
+  "entry_pricing": {
+    "price_side": "bid",
+    "use_order_book": true,
+    "order_book_top": 1
+  },
+  "exit_pricing": {
+    "price_side": "ask",
+    "use_order_book": true,
+    "order_book_top": 1
+  },
+  "exchange_name": "binance",
+  "pair_whitelist": [
+    "BTC/USDT",
+    "ETH/USDT"
+  ],
+  "timeframe": "5m",
+  "stake_amount": "unlimited",
+  "min_stake_amount": 10,
+  "max_stake_amount": 100,
+  "fee_open_cost": 0.0025,
+  "fee_open_currency": "BTC",
+  "fee_close_cost": 0.0025,
+  "fee_close_currency": "BTC",
+  "fee_open_factor": 1.0,
+  "fee_close_factor": 1.0,
+  "amount_reserve_percent": 0.05,
+  "telegram": {
+    "enabled": false,
+    "token": "",
+    "chat_id": ""
+  },
+  "api_server": {
+    "enabled": false,
+    "listen_ip_address": "127.0.0.1",
+    "listen_port": 8080,
+    "verbosity": "info",
+    "enable_openapi": false
+  },
+  "backtesting": {
+    "max_open_trades": 3,
+    "stake_amount": 100
+  },
+  "hyperopt": {
+    "max_epochs": 100,
+    "spaces": [
+      "buy",
+      "sell",
+      "roi",
+      "stoploss"
+    ]
+  }
+}
