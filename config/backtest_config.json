@@ -1,0 +1,31 @@
+{
+  "max_open_trades": 3,
+  "stake_currency": "USDT",
+  "dry_run": true,
+  "dry_run_wallet": 1000,
+  "exchange": {
+    "name": "binance",
+    "sandbox": false,
+    "pair_whitelist": [
+      "BTC/USDT",
+      "ETH/USDT",
+      "ADA/USDT"
+    ]
+  },
+  "datadir": "user_data",
+  "user_data_dir": "user_data",
+  "timeframe": "5m",
+  "stake_amount": 100,
+  "min_stake_amount": 10,
+  "max_stake_amount": 500,
+  "fiat_display_currency": "USD",
+  "telegram": {
+    "enabled": false
+  },
+  "backtesting": {
+    "max_open_trades": 3,
+    "stake_amount": 100,
+    "use_max_market_positions": false,
+    "enable_protections": false
+  }
+}
