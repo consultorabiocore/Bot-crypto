@@ -1,0 +1,5 @@
+# BioCore Bot-crypto - Safe V2
+# Motor de trading fijado a la versión estable usada para esta V2.
+# No incluye FreqAI todavía: primero validaremos la estrategia base.
+
+freqtrade==2026.7
