@@ -1,40 +1,30 @@
 {
-  "max_open_trades": 3,
+  "max_open_trades": 1,
   "stake_currency": "USDT",
+  "stake_amount": 10,
+  "tradable_balance_ratio": 0.9,
   "dry_run": true,
-  "dry_run_wallet": 100,
-  "margin_mode": "cross",
+  "dry_run_wallet": 35,
+  "fiat_display_currency": "USD",
+  "trading_mode": "spot",
+  "cancel_open_orders_on_exit": true,
   "exchange": {
     "name": "binance",
-    "sandbox": false,
     "key": "",
     "secret": "",
+    "ccxt_config": {},
+    "ccxt_async_config": {},
     "pair_whitelist": [
       "BTC/USDT",
-      "ETH/USDT",
-      "ADA/USDT"
+      "ETH/USDT"
     ],
-    "pair_blacklist": [
-      "BNB/USDT"
-    ]
+    "pair_blacklist": []
   },
-  "telegram": {
-    "enabled": false,
-    "token": "",
-    "chat_id": ""
-  },
-  "edge": {
-    "enabled": false
-  },
-  "datadir": "user_data",
-  "db_url": "sqlite:///user_data/trades.db",
-  "user_data_dir": "user_data",
-  "initial_state": "running",
-  "fiat_display_currency": "USD",
-  "dry_run_wallet": 100,
-  "cancel_open_orders_on_exit": false,
-  "trading_mode": "spot",
-  "margin_mode": "",
+  "pairlists": [
+    {
+      "method": "StaticPairList"
+    }
+  ],
   "unfilledtimeout": {
     "entry": 10,
     "exit": 10,
@@ -50,22 +40,6 @@
     "use_order_book": true,
     "order_book_top": 1
   },
-  "exchange_name": "binance",
-  "pair_whitelist": [
-    "BTC/USDT",
-    "ETH/USDT"
-  ],
-  "timeframe": "5m",
-  "stake_amount": "unlimited",
-  "min_stake_amount": 10,
-  "max_stake_amount": 100,
-  "fee_open_cost": 0.0025,
-  "fee_open_currency": "BTC",
-  "fee_close_cost": 0.0025,
-  "fee_close_currency": "BTC",
-  "fee_open_factor": 1.0,
-  "fee_close_factor": 1.0,
-  "amount_reserve_percent": 0.05,
   "telegram": {
     "enabled": false,
     "token": "",
@@ -78,17 +52,8 @@
     "verbosity": "info",
     "enable_openapi": false
   },
-  "backtesting": {
-    "max_open_trades": 3,
-    "stake_amount": 100
-  },
-  "hyperopt": {
-    "max_epochs": 100,
-    "spaces": [
-      "buy",
-      "sell",
-      "roi",
-      "stoploss"
-    ]
-  }
+  "datadir": "user_data",
+  "db_url": "sqlite:///user_data/trades.db",
+  "user_data_dir": "user_data",
+  "initial_state": "running"
 }
